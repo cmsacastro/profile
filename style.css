@@ -109,9 +109,9 @@ a.effect-underline:hover:after {
     width: 500px;
   }
 }
-@media (max-width: 540px) {
+@media (min-width: 320px) and (max-width: 540px) {
   .container {
-    width: 300px;
+   /* width: 300px;*/
   }
   p {
     font-size: 14px;
