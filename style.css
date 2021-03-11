@@ -63,7 +63,16 @@ a.effect-underline:hover:after {
   width: 130px;
   border-radius: 50%;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  -webkit-animation: fade 7s;
+  animation: fade 5s;
 }
+
+@-webkit-keyframes fade {
+0% {opacity: 0.1}
+50% {opacity: 1}
+100% {opacity: 1}
+}
+
 
 .container{
   width: 700px;
