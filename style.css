@@ -111,7 +111,6 @@ a.effect-underline:hover:after {
 }
 @media (max-width: 540px) {
   .container {
-    width: 300px;
   }
   p {
     font-size: 14px;
