@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
+body {
+  background-color: #F7F8FA;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+h1{
+  color: black;
+  font-size: 32px;
+  font-weight: 100;
+  line-height: .9;
+}
+
+h2{
+  color: #black;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+p {
+  color: black;
+  font-size: 15px;
+  font-weight: 100;
+  text-align: center;
+}
+
+a {
+  color: #F9BC09;
+  font-size: 22px;
+  font-weight: 300;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  width: 300px:
+  margin: 0 auto;
+}
+
+a.effect-underline:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  height: 1em;
+  width: 100%;
+  border-bottom: 1px solid;
+  margin-top: 10px;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale(0,1);
+  transform: scale(0,1);
+}
+
+a.effect-underline:hover:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.avatar_circle {
+  width: 130px;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.container{
+  width: 700px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+
+.card{
+  padding: 24px;
+  margin: 16px;
+  border-radius: 24px;
+  box-shadow: rgba(149, 157, 165, 0.20) 0px 8px 24px;
+}
+
+.list-inline {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.list-inline > li {
+  display: inline-block;
+}
+
+.list-inline > li > a {
+  color: #ffe49b;
+  font-size: 48px;
+  padding-left: 16px;
+}
+
+.list-inline > li > a:hover {
+  color: #ffd76b;
+  text-shadow: rgba(149, 157, 165, 0.1) 0px 8px 24px;
+}
+
+@media (max-width: 960px) {
+  .container {
+    width: 700px;
+  }
+}
+@media (max-width: 720px) {
+  .container {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  .container {
+    width: 300px;
+  }
+  p {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  .card {
+    padding: 16px;
+    padding-top: 8px;
+    padding-bottom: 16px;
+    margin: 10px;
+  }
+  .avatar_circle {
+    width: 100px;
+  }
+  .list-inline > li > a {
+    font-size: 32px;
+    padding-left: 10px;
+  }
+  a {
+    font-size: 20px;
+  }
+  h1{
+    font-size: 27px;
+  }
+}
